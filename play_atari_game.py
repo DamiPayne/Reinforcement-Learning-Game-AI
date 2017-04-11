@@ -60,8 +60,11 @@ else:
 ##Now let's train...
 
 #example of reinforcement learning in a game environment#
-#Q learning is a gernalised AI tech which builds a model of the environment without prior knowledge
-#experenced relay where past experence are incorporated into future models
+#Q learning is a gernalised AI tech which builds a model of the environment 
+#without prior knowledge via the use of a experenced relay
+#experienced relay is a automated learning technique where past experence 
+#are incorporated into future models
+
 #initialise gym environment and dqn
 env = Environment(args)
 agent = DQN(env, args)
@@ -73,4 +76,5 @@ Trainer(agent).run()
 env.gym.monitor.start(args.out, force=True)
 agent.play()
 env.gym.monitor.close()
-#run: python atari.py --game --display true
+#run: python play_atari_game.py --display true
+#--display true allows you to view the game being played
