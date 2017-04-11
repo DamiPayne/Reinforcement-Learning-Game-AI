@@ -5,7 +5,7 @@ from environment import Environment
 from train import Trainer
 from dqn import DQN
 
-## these are just command line arguments.
+## these are our command line arguments.
 parser = argparse.ArgumentParser()
 envarg = parser.add_argument_group('Environment')
 envarg.add_argument("--game", type=str, default="SpaceInvaders-v0", help="Name of the atari game to test")
@@ -57,7 +57,7 @@ else:
 		os.makedirs('gym-out/' + args.game)
 	args.out = 'gym-out/' + args.game
 
-##here we go...
+##Now let's train...
 
 #example of reinforcement learning in a game environment#
 #Q learning is a gernalised AI tech which builds a model of the environment without prior knowledge
