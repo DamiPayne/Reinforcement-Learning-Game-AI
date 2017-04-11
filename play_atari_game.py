@@ -73,4 +73,4 @@ Trainer(agent).run()
 env.gym.monitor.start(args.out, force=True)
 agent.play()
 env.gym.monitor.close()
-#run: python atari.py --game <env_name>
+#run: python atari.py --game --display true
